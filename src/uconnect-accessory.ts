@@ -20,9 +20,9 @@ export class UconnectPlatformAccessory {
     private readonly accessory: PlatformAccessory,
   ) {
 
-    this.lockCurrentState = this.platform.Characteristic.LockCurrentState.UNKNOWN;
+    this.lockCurrentState = this.platform.Characteristic.LockCurrentState.UNSECURED;
     this.lockTargetState = this.platform.Characteristic.LockTargetState.UNSECURED;
-    this.unlockCurrentState = this.platform.Characteristic.LockCurrentState.UNKNOWN;
+    this.unlockCurrentState = this.platform.Characteristic.LockCurrentState.SECURED;
     this.unlockTargetState = this.platform.Characteristic.LockTargetState.SECURED;
     this.startEngineState = false;
     this.stopEngineState = true;
